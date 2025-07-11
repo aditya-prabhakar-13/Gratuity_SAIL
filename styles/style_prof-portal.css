@@ -1,0 +1,234 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body {
+  background: url('../images/banner_img.jpeg') no-repeat center center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Optional dark overlay for background readability */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: -1;
+}
+
+main{
+  height: 90vh;
+  width: 100%;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.professor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    margin-bottom: 2rem;
+}
+
+.professor-heading{
+    font-family: Instrument Sans;
+    font-size: 4.5vw;
+    font-weight: 600;
+    line-height: 4.5vw;
+    letter-spacing: -0.02em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #FAFAFA;
+    margin-bottom: 20px;
+}
+
+.professor-search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.professor-search input {
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 12px;
+  width: 250px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  color: #fff;
+  outline: none;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.professor-search input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.professor-search button {
+  padding: 0.75rem 1.2rem;
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #fff;
+  border-radius: 12px;
+  cursor: pointer;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  transition: all 0.2s ease;
+}
+
+.professor-search button:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+.professor-card-container {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.professor-card {
+  width: 200px;
+  height: 240px;
+  border-radius: 16px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.professor-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+}
+
+.professor-card-logo img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+.professor-card-name {
+  font-family: 'Instrument Sans', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+/* Better responsive breakpoints */
+
+@media (max-width: 1200px) {
+  .professor-heading {
+    font-size: 3rem;
+    line-height: 3.5rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  main {
+    height: auto;
+    padding: 1rem;
+  }
+
+  .professor {
+    height: auto;
+    padding: 2rem 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .professor-heading {
+    font-size: 2.2rem;
+    line-height: 2.6rem;
+    text-align: center;
+    width: 100%;
+  }
+
+  .professor-search {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.8rem;
+  }
+
+  .professor-search input,
+  .professor-search button {
+    width: 100%;
+    max-width: 100%;
+    font-size: 1rem;
+  }
+
+  .professor-card {
+    width: 160px;
+    height: 200px;
+    padding: 0.8rem;
+  }
+
+  .professor-card-logo img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .professor-card-name {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .professor-heading {
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .professor-search input,
+  .professor-search button {
+    font-size: 0.95rem;
+  }
+
+  .professor-card {
+    width: 140px;
+    height: 180px;
+  }
+
+  .professor-card-logo img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .professor-card-name {
+    font-size: 0.95rem;
+  }
+}

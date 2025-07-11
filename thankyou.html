@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/style_thankyou.css">
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>SAIL | Gratuity Portal</title>
+</head>
+<body>
+    <main>
+        <div class="navbar">
+            <div class="navbar-content">
+                <div class="navbar-content-logo">
+                    <a href="/sail/">
+                    <img src="images/sail_logo.svg" alt="logo" />
+                    </a>
+                </div>
+
+                <div class="navbar-hamburger" id="hamburger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+
+                <div class="navbar-content-links" id="menu">
+                    <a href="/sail/" class="navbar-content-links-a">Home</a>
+                    <a href="/sail/about" class="navbar-content-links-a">About Us</a>
+
+                    <!-- Initiative Dropdown -->
+                    <div class="navbar-dropdown" id="initiative-dropdown">
+                        <p class="navbar-content-links-a">Initiative <img src="images/dropdown_arrow.svg" alt="dropdown" /></p>
+                        <div class="dropdown-menu" id="initiative-menu">
+                            <a href="/sail/initiative#amp">AMP</a>
+                            <a href="/sail/initiative#yearbook">Yearbook</a>
+                            <a href="/sail/initiative#newsletter">Newsletter</a>
+                            <a href="/sail/initiative#core-mentorship">Core Mentorship</a>
+                            <a href="/sail/initiative#class-song">Class Song</a>
+                            <a href="/sail/initiative#placement-mock-interview">Placement Mock Interview</a>
+                            <a href="/sail/initiative#summarise-and-share">Summarise & Share</a>
+                            <a href="/sail/initiative#alumni-awards">Alumni Awards</a>
+                        </div>
+                    </div>
+
+                    <!-- Events Dropdown -->
+                    <div class="navbar-dropdown" id="events-dropdown">
+                    <p class="navbar-content-links-a">Events <img src="images/dropdown_arrow.svg" alt="dropdown" /></p>
+                        <div class="dropdown-menu" id="events-menu">
+                            <a href="/sail/events-smriti">Smriti</a>
+                            <a href="/sail/events-graduation-tea-party">Graduation Tea Party</a>
+                            <a href="/sail/events-international-students-day">International Students' Day</a>
+                            <a href="/sail/events-finalis-resonare">Finalis Resonare</a>
+                            <a href="/sail/events-graduation-ball-dance">Graduation Ball Dance</a>
+                            <a href="/sail/events-seminars">Seminars</a>
+                        </div>
+                    </div>
+
+                    <!-- Yearbook Dropdown -->
+                    <div class="navbar-dropdown" id="yearbook-dropdown">
+                    <p class="navbar-content-links-a">Yearbook <img src="images/dropdown_arrow.svg" alt="dropdown" /></p>
+                        <div class="dropdown-menu" id="yearbook-menu">
+                            <a href="https://www.iitg.ac.in/yearbook" target="_blank">Yearbook Portal</a>
+                            <a href="https://www.iitg.ac.in/yearbook/yearbook24/" target="_blank">Yearbook 2024</a>
+                        </div>
+                    </div>
+
+                    <a href="/sail/#service" class="navbar-content-links-a">Services</a>
+
+                    <button class="navbar-content-links-button" onclick="window.open('https://online.iitg.ac.in/epay/donation/donation.jsp', '_blank')">Donate</button>
+                </div>
+            </div>
+        </div>
+        <div class="thankyou-container">
+            <div class="thankyou">Thank You!</div>
+            <a href="prof-portal.html" class="submit-another-button">Submit another</a>
+        </div>
+    </main>
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footercontent">
+        <div class="footer1">
+          <div class="footer-logo">
+            <img src="images/sail_logo.svg" alt="SAIL Logo" class="logo-image" />
+            <p>Student Alumni Interaction Linkage</p>
+          </div>
+        </div>
+
+        <div class="Line">
+          <hr />
+        </div>
+
+        <div class="footer2">
+          <div class="footer-links">
+            <h4>Learn More</h4>
+            <ul>
+              <li><a href="https://www.iitg.ac.in/aer/home" target="_blank">Alumni & External Relations</a></li>
+              <li><a href="https://www.iitg.ac.in/" target="_blank">IIT Guwahati</a></li>
+              <li><a href="/about">About Us</a></li>
+              <li><a href="/">FAQs</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-contact">
+            <h4>Contact Us</h4>
+            <p>Call us:<br /><a href="tel:+917020996986">+91-7020996986</a></p>
+            <p><a href="tel:+917060107025">+91-7060107025</a></p>
+            <p>Email us: <a href="mailto:SAIL@iitg.ac.in">SAIL@iitg.ac.in</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer3">
+        <div class="footer-social">
+          <i class="fab fa-instagram" id="insta"></i>
+          <i class="fab fa-youtube" id="youtube"></i>
+          <i class="fab fa-linkedin" id="linkedin"></i>
+          <i class="fab fa-facebook-messenger" id="facebook"></i>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="copyright">© 2025 SAIL All rights reserved.</div>
+  <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
+  <script src="script_thankyou.js"></script>
+</body>
+</html>
