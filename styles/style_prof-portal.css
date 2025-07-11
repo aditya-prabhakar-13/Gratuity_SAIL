@@ -12,7 +12,7 @@ body {
   flex-direction: column;
 }
 
-/* Optional dark overlay for background readability */
+
 body::before {
   content: "";
   position: fixed;
@@ -147,7 +147,6 @@ main{
   margin-top: 1rem;
 }
 
-/* Better responsive breakpoints */
 
 @media (max-width: 1200px) {
   .professor-heading {

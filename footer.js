@@ -1,4 +1,3 @@
-// footer.js
 
 document.getElementById("insta").addEventListener("click", () => {
   window.open("https://www.instagram.com/sail_iitg", "_blank", "noopener,noreferrer");

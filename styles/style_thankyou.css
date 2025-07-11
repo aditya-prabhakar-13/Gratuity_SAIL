@@ -6,7 +6,7 @@ html, body {
 }
 
 body {
-  background: url('../images/banner_img.jpeg') no-repeat center center fixed;
+  background: url('../images/banner_img.jpeg') no-repeat center center;
   background-size: cover;
   display: flex;
   flex-direction: column;

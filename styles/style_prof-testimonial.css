@@ -13,7 +13,7 @@ body {
 }
 
 
-/* Optional dark overlay for background readability */
+
 body::before {
   content: "";
   position: fixed;
