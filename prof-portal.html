@@ -76,35 +76,51 @@
             <div class="professor-heading">Honor your Professors with your words</div>
             <div class="professor-search">
                 <input type="text" placeholder="Search Professors..." id="search" list="professors" />
+                <select id="department">
+                    <option value="">All Departments</option>
+                    <option value="cse">CSE</option>
+                    <option value="dsai">DSAI</option>
+                    <option value="mnc">MNC</option>
+                    <option value="ece">ECE</option>
+                    <option value="me">ME</option>
+                    <option value="ee">EEE</option>
+                    <option value="cl">CL</option>
+                    <option value="cst">CST</option>
+                    <option value="ce">CE</option>
+                    <option value="bsbe">BSBE</option>
+                    <option value="dod">Design</option>
+                </select>   
                 <datalist id="professors"></datalist>
                 <button id="search-btn">Search</button>
+                </div>
+            <div class="professor-card-scroll-wrapper">
+                <div class="professor-card-container">
+                    <div class="professor-card" data-department="cse" >
+                        <div class="professor-card-logo">
+                            <img src="images/prof1.png" alt="Prof 201" />
+                        </div>
+                        <div class="professor-card-name">Prof 201</div>
+                    </div>
+                    <div class="professor-card" data-department="cl" >
+                        <div class="professor-card-logo"  >
+                            <img src="images/prof2.png" alt="Prof 202" />
+                        </div>
+                        <div class="professor-card-name">Prof 202</div>
+                    </div>
+                    <div class="professor-card" data-department="mnc" >
+                        <div class="professor-card-logo">
+                            <img src="images/prof3.png" alt="Prof 203" />
+                        </div>
+                        <div class="professor-card-name">Prof 203</div>
+                    </div>
+                    <div class="professor-card" data-department="dsai" >
+                        <div class="professor-card-logo">
+                            <img src="images/prof4.png" alt="Prof 204" />
+                        </div>
+                        <div class="professor-card-name">Prof 204</div>
+                    </div>
+                </div>
             </div>
-            <div class="professor-card-container">
-                <div class="professor-card" >
-                    <div class="professor-card-logo">
-                        <img src="images/prof1.png" alt="Prof 201" />
-                    </div>
-                    <div class="professor-card-name">Prof 201</div>
-                </div>
-                <div class="professor-card" >
-                    <div class="professor-card-logo">
-                        <img src="images/prof2.png" alt="Prof 202" />
-                    </div>
-                    <div class="professor-card-name">Prof 202</div>
-                </div>
-                <div class="professor-card" >
-                    <div class="professor-card-logo">
-                        <img src="images/prof3.png" alt="Prof 203" />
-                    </div>
-                    <div class="professor-card-name">Prof 203</div>
-                </div>
-                <div class="professor-card" >
-                    <div class="professor-card-logo">
-                        <img src="images/prof4.png" alt="Prof 204" />
-                    </div>
-                    <div class="professor-card-name">Prof 204</div>
-                </div>
-                </div>
         </div>
     </main>
   <footer class="footer">

@@ -142,6 +142,7 @@ button#submit-btn:hover {
     height: auto;
     padding: 2rem 1rem;
     margin-bottom: 1rem;
+    margin-top: 2.5rem;
   }
 
   .testimonial-heading {
@@ -149,6 +150,7 @@ button#submit-btn:hover {
     line-height: 2.6rem;
     text-align: center;
     width: 100%;
+    margin-bottom: 2rem;
   }
 
   .testimonial-card {

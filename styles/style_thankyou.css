@@ -83,6 +83,10 @@ main {
     padding: 10px 20px;
     font-size: 0.95rem;
   }
+
+  .thankyou-container{
+    min-height: 50vh;
+  }
 }
 
 @media (max-width: 500px) {

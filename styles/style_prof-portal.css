@@ -6,7 +6,7 @@ html, body {
 }
 
 body {
-  background: url('../images/banner_img.jpeg') no-repeat center center;
+  background: url('../images/banner_img.jpeg') repeat center center;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -147,6 +147,24 @@ main{
   margin-top: 1rem;
 }
 
+.professor-search select {
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  color: #fff;
+  outline: none;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  appearance: none;
+  cursor: pointer;
+}
+.professor-search select option {
+  color: #000;
+}
+
 
 @media (max-width: 1200px) {
   .professor-heading {
@@ -154,10 +172,19 @@ main{
     line-height: 3.5rem;
     text-align: center;
   }
+
+  .body{
+        background: url('../images/banner_img.jpeg') repeat center center;
+    }
 }
 
 @media (max-width: 768px) {
-  main {
+  
+    .body{
+        background: url('../images/banner_img.jpeg') repeat center center;
+    }
+
+    main {
     height: auto;
     padding: 1rem;
   }
@@ -166,6 +193,8 @@ main{
     height: auto;
     padding: 2rem 1rem;
     margin-bottom: 1rem;
+    margin-top: 50px;
+    overflow: auto;
   }
 
   .professor-heading {
@@ -173,6 +202,7 @@ main{
     line-height: 2.6rem;
     text-align: center;
     width: 100%;
+    margin-top: 50px;
   }
 
   .professor-search {
@@ -186,6 +216,7 @@ main{
     width: 100%;
     max-width: 100%;
     font-size: 1rem;
+    align-self: center;
   }
 
   .professor-card {
@@ -202,9 +233,54 @@ main{
   .professor-card-name {
     font-size: 1rem;
   }
+
+  .professor-card-container {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    flex-direction: row;
+    gap: 1rem;
+    padding: 1rem;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .professor-card {
+    flex: 0 0 160px; /* fixed width, no shrinking */
+    height: 200px;
+    scroll-snap-align: start;
+  }
+  .professor-card-scroll-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+
+  .professor-card-container {
+    flex-wrap: nowrap;
+    width: max-content;
+  }
+
+  .professor-card {
+    flex: 0 0 160px;
+    scroll-snap-align: start;
+  }
+  
+  .professor-search select {
+    width: 100%;
+    max-width: 100%;
+    }
 }
 
+
+
 @media (max-width: 500px) {
+
+    .body{
+        background: url('../images/banner_img.jpeg') repeat center center;
+    }
+
   .professor-heading {
     font-size: 1.8rem;
     line-height: 2.2rem;
